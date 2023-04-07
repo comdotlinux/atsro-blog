@@ -24,3 +24,11 @@ pnpm-debug.log*
 
 # ignore Jampack cache files
 .jampack/
+/.idea/aws.xml
+/.idea/blog.iml
+/.idea/jpa-buddy.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/nohup.out
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
