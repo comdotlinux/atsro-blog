@@ -3,7 +3,8 @@
 
 # Except these files & folders
 !/src
-!/public
+!/public/**/*.ts
+!/public/**/*.js
 !/.github
 !tsconfig.json
 !astro.config.mjs
