@@ -69,7 +69,7 @@ This is what I use, and I know it's a little rough around the edges but get's th
    - Some personal optimizations are applied, like for java only use [temurin](https://adoptium.net/temurin/)
    - Ignore some alpha / beta / pre-dev / dev / some error versions seens
 6. Then for each update show one line in place edit `sed` command to update individual tool
-7. Also a consolidated `sed` to update all tools at once
+7. Also, a consolidated `sed` to update all tools at once
 8. there is a `update-asdf.sh -n` flag that runs in non-interactively by saying yes but does not actually update any
    versions.
 
@@ -110,7 +110,7 @@ In action
 This too does not update the versions in the `.tool-versions` file, but probably is not too hard to add that in. This
 exercise is left for the reader (I've always wanted to say that)
 
-![A monkeyuser comic on backlogs](../assets/20221010/236-buglog.png "buglog")
+![A monkeyuser comic on backlogs](../assets/20221010/236-buglog.png)
 
 ## Extro
 
