@@ -1,5 +1,5 @@
 ---
-title: "Followup: latest version of the tools using asdf"
+title: "Followup latest version of the tools using asdf"
 author: comdotlinux
 pubDatetime: 2022-10-10T13:07:15.000+00:00
 postSlug: followup-latest-version-of-the-tools-using-asdf
