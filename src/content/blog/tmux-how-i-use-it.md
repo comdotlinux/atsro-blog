@@ -19,7 +19,7 @@ description: "Tools"
 
 You have heard of **[tmux](https://github.com/tmux/tmux/wiki)**, you have haven't you? If not then surely you have heard of **[screen](https://www.gnu.org/software/screen/)**? Maybe you used **[byobu](https://www.byobu.org/)**? If the answer to any of these is: Yes Of Course I have my own custom setup and don't like to customize too much, or even read too much then this post is not for you ;) Here's a comic for you while you leave to do whatever that you want to do then. Au Revoir
 
-[![Zenos Progress](../../assets/20221012/96-zenos-progress.png)](https://www.monkeyuser.com/assets/images/2018/96-zenos-progress.png)
+[![Zenos Progress](../../assets/20221112/96-zenos-progress.png)](https://www.monkeyuser.com/assets/images/2018/96-zenos-progress.png)
 
 This is going to be a long one
 
@@ -61,13 +61,13 @@ But, I am usually using the terminal locally and would like to see some better v
 
 As with almost everything Gnu / Linux there's a configuration file for that named `.tmux.conf`
 
-[![x11](../../assets/20221012/x11.png)](https://www.explainxkcd.com/wiki/index.php/963:_X11)
+[![x11](../../assets/20221112/x11.png)](https://www.explainxkcd.com/wiki/index.php/963:_X11)
 
 A joke about X11 Config File
 
 But first setting some expectations, we are going to leave the Mac Users Behind (only for this section), or at least allow them to find their own way hereafter, as I'm not sure how to install the packages on Mac. O.K. Let's continue
 
-![ok okay ok](../../assets/20221012/ok_okay_ok.png)
+![ok okay ok](../../assets/20221112/ok_okay_ok.png)
 
 A xkcd joke aboot ok spellings
 
@@ -116,7 +116,7 @@ By No means even scratching the surface of the commands available but these are 
 
 ## So What's next? Fireworks? Nope even better ;)
 
-[![Automation](../../assets/20221012/automation.png)](https://www.explainxkcd.com/wiki/index.php/1319:_Automation)
+[![Automation](../../assets/20221112/automation.png)](https://www.explainxkcd.com/wiki/index.php/1319:_Automation)
 
 Another XKCD joke about automation
 
@@ -136,7 +136,7 @@ The Developer Setup That You Need on Every Restart of a Computer / Every Restart
 
 A video of the previously created .tmux.conf in action
 
-![TmuxEverywhere](../../assets/20221012/TmuxEverywhere.gif)
+![TmuxEverywhere](../../assets/20221112/TmuxEverywhere.gif)
 
 tmux, tmux everywhere says Buzz Lightyear from Toy Story
 
@@ -153,7 +153,7 @@ Yes, You can use tmux to do whatever you want, start any program, any server and
 Also, Apologies for the XKCD comics, I just love [Randall](https://en.wikipedia.org/wiki/Randall_Munroe), and [xkcd](https://xkcd.com/) and cannot help myself.  
 Go Buy [What-If](https://xkcd.com/what-if/) and [What-If 2](https://xkcd.com/what-if-2/) (No affiliations or sponsorship's by the way, like i'm gonna get sponsorship's :p )
 
-![XKCD-everywhere](../../assets/20221012/XKCD-everywhere.gif)
+![XKCD-everywhere](../../assets/20221112/XKCD-everywhere.gif)
 
 xkcd, xkcd everywhere says Buzz Lightyear from Toy Story
 
