@@ -147,7 +147,7 @@ Go Buy [What-If](https://xkcd.com/what-if/) and [What-If 2](https://xkcd.com/wha
 
 Now, I'm by no mean an expert on `tmux` I just think it is sufficiently cool and customizable that it helps a lot in my daily development. Also quite new at blogging and being a poser who thinks that I know something that someone else does not, so please do criticize but with love if possible :)
 
-There are numerous pages and even some books on tmux I think, just search, and you will find it, also [stackexchange](https://stackexchange.com/) has quite some answered questions :)
+There are numerous pages and even some books on tmux I think, just search, and you will find it, also [Stack Overflow](https://stackoverflow.com/questions/tagged/tmux) has quite some answered questions :)
 
 Don't forget to let me know how you like and use tmux indifferent ways, would love to integrate some tricks into my own config to use going forward.
 
