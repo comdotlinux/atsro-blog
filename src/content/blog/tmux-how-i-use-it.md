@@ -104,16 +104,16 @@ So now you use the commands you have learnt and stop here if you want, so just l
 
 | **Command**              | **Action**                | **Alternative Command**                          |
 | ------------------------ | ------------------------- | ------------------------------------------------ | -------- |
-| **Ctrl+a c**             | New Window                |
-| **Ctrl Right Arrow**     | Next Window               |
-| **Ctrl Left Arrow**      | Previous Window           |
+| **Ctrl+a c**             | New Window                |                                                  |
+| **Ctrl Right Arrow**     | Next Window               |                                                  |
+| **Ctrl Left Arrow**      | Previous Window           |                                                  |
 | **Ctrl+a %**             | Vertical Split Pane       | Ctrl+a                                           | (a pipe) |
 | **Ctrl+a -**             | Horizontal Split Pane     | Ctrl+a - (minus)                                 |
-| **Shift Right Arrow**    | Next Right Pane           |
-| **Shift Left Arrow**     | Next Left Pane            |
-| **Shift Up Arrow**       | Next Pane Up              |
-| **Shift Down Arrow**     | Next Pane Down            |
-| **Ctrl+a Shift+a**       | Rename Window             |
+| **Shift Right Arrow**    | Next Right Pane           |                                                  |
+| **Shift Left Arrow**     | Next Left Pane            |                                                  |
+| **Shift Up Arrow**       | Next Pane Up              |                                                  |
+| **Shift Down Arrow**     | Next Pane Down            |                                                  |
+| **Ctrl+a Shift+a**       | Rename Window             |                                                  |
 | **Ctrl+a \ (backslash)** | Kill Server               | Close each Window and Paneone by one with Ctrl+d |
 | **Ctrl+a d**             | Detach to the back ground | tmux a (to re-attach)                            |
 
