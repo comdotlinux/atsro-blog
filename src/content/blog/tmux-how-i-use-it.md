@@ -25,7 +25,7 @@ This is going to be a long one
 
 ## Table Of Contents
 
-## Still with me?
+- Still with me?
 
 ## O.K. then let's have a look at tmux, how I use it, and maybe you can start using it too?
 
@@ -81,22 +81,16 @@ sudo apt install powerline fonts-powerline
 sudo dnf install powerline powerline-fonts tmux-powerline
 ```
 
-Then modify our config fine `~/.tmux.conf` creating it if it does not exist.
-
-https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa/0e393467dde50bfda0f067a6cd253e20ffce3b95
+Then modify our config fine `~/.tmux.conf` creating it if it does not exist [to look like this](https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa/0e393467dde50bfda0f067a6cd253e20ffce3b95)
 
 <div style="display: flex; align-content: center; flex-wrap: wrap; justify-content: center">
     <iframe style="width: 80%; height: 35vh;" src="https://www.youtube-nocookie.com/embed/x2cCbF_GTRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-Nothing spectacular but let's improve on that, updating our `.tmux.conf` to
-
-https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa/1edeab009e6b9b90448c3c1e50f3eed245d80a12
+Nothing spectacular but let's improve on that, updating our `.tmux.conf` to [Look Like This](https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa/1edeab009e6b9b90448c3c1e50f3eed245d80a12)
 
 Now what we have here is reusing some configuration from configuration that byobu created. You could, if you want to simply copy it once and then not install byobu again, I keep it just because I'm lazy ;)  
-Let's keep going,
-
-https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa/8562119ab550b87c3c092aee662ebd72b2e77d94
+Let's keep going, now the config [should look like this](https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa/8562119ab550b87c3c092aee662ebd72b2e77d94)
 
 Now we are getting somewhere where it get's interesting. Let's see these in action.
 
@@ -108,7 +102,20 @@ Also you can add below to make you life easier with panes
 
 So now you use the commands you have learnt and stop here if you want, so just leaving here a quick command summary.
 
-<table><tbody><tr><td class="has-text-align-center" data-align="center">Command</td><td class="has-text-align-center" data-align="center">Action</td><td class="has-text-align-center" data-align="center">Alternative Command</td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl+a c</code></td><td class="has-text-align-center" data-align="center">New Window</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl Right Arrow</code></td><td class="has-text-align-center" data-align="center">Next Window</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl Left Arrow</code></td><td class="has-text-align-center" data-align="center">Previous Window</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl+a %</code></td><td class="has-text-align-center" data-align="center">Vertical Split Pane</td><td class="has-text-align-center" data-align="center"><code>Ctrl+a |</code> (a pipe)</td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl+a -</code></td><td class="has-text-align-center" data-align="center">Horizontal Split Pane</td><td class="has-text-align-center" data-align="center"><code>Ctrl+a -</code> (minus)</td></tr><tr><td class="has-text-align-center" data-align="center"><code>Shift Right Arrow</code></td><td class="has-text-align-center" data-align="center">Next Right Pane</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Shift Left Arrow</code></td><td class="has-text-align-center" data-align="center">Next Left Pane</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Shift Up Arrow</code></td><td class="has-text-align-center" data-align="center">Next Pane Up</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Shift Down Arrow</code></td><td class="has-text-align-center" data-align="center">Next Pane Down</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl+a Shift+a</code></td><td class="has-text-align-center" data-align="center">Rename Window</td><td class="has-text-align-center" data-align="center"></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl+a \</code> (backslash)</td><td class="has-text-align-center" data-align="center">Kill Server</td><td class="has-text-align-center" data-align="center">Close each Window and Pane<br>one by one with <code>Ctrl+d</code></td></tr><tr><td class="has-text-align-center" data-align="center"><code>Ctrl+a d</code></td><td class="has-text-align-center" data-align="center">Detach to the back ground</td><td class="has-text-align-center" data-align="center"><code>tmux a</code> (to re-attach)</td></tr></tbody></table>
+| **Command**              | **Action**                | **Alternative Command**                          |
+| ------------------------ | ------------------------- | ------------------------------------------------ | -------- |
+| **Ctrl+a c**             | New Window                |
+| **Ctrl Right Arrow**     | Next Window               |
+| **Ctrl Left Arrow**      | Previous Window           |
+| **Ctrl+a %**             | Vertical Split Pane       | Ctrl+a                                           | (a pipe) |
+| **Ctrl+a -**             | Horizontal Split Pane     | Ctrl+a - (minus)                                 |
+| **Shift Right Arrow**    | Next Right Pane           |
+| **Shift Left Arrow**     | Next Left Pane            |
+| **Shift Up Arrow**       | Next Pane Up              |
+| **Shift Down Arrow**     | Next Pane Down            |
+| **Ctrl+a Shift+a**       | Rename Window             |
+| **Ctrl+a \ (backslash)** | Kill Server               | Close each Window and Paneone by one with Ctrl+d |
+| **Ctrl+a d**             | Detach to the back ground | tmux a (to re-attach)                            |
 
 A Small List Of Common Useful Commands
 
@@ -126,19 +133,15 @@ We all have things that we start whenever we want to start developing, like (i'm
 Now you can manually run these if you want, and they will work great, but we are here and reading this long boring "Intro" to tmux not because we heed the XKCD right? so let's see how we can automate these using tmux. So update the config to the file below and launch tmux, now you see.....  
 Magic!!!! what we set can now always be run exactly in the same way every-time.
 
-https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa
+<script src="https://gist.github.com/comdotlinux/fb0050c65128fe5f7543194c8ec874aa.js"></script>
 
 The Developer Setup That You Need on Every Restart of a Computer / Every Restart of development session
 
 <div style="display: flex; align-content: center; flex-wrap: wrap; justify-content: center">
-    <iframe style="width: 80%; height: 35vh;" src="https://www.youtube-nocookie.com/embed/tRRQENJeYQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe style="width: 80%; height: 35vh;" src="https://www.youtube-nocookie.com/embed/tRRQENJeYQY" title="A video of the previously created .tmux.conf in action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-A video of the previously created .tmux.conf in action
-
 ![TmuxEverywhere](../../assets/20221112/TmuxEverywhere.gif)
-
-tmux, tmux everywhere says Buzz Lightyear from Toy Story
 
 Yes, You can use tmux to do whatever you want, start any program, any server and as many windows + sub panes and easily navigate between them. Let's list some benefits before we go?
 
@@ -154,8 +157,6 @@ Also, Apologies for the XKCD comics, I just love [Randall](https://en.wikipedia.
 Go Buy [What-If](https://xkcd.com/what-if/) and [What-If 2](https://xkcd.com/what-if-2/) (No affiliations or sponsorship's by the way, like i'm gonna get sponsorship's :p )
 
 ![XKCD-everywhere](../../assets/20221112/XKCD-everywhere.gif)
-
-xkcd, xkcd everywhere says Buzz Lightyear from Toy Story
 
 Now, I'm by no mean an expert on `tmux` I just think it is sufficiently cool and customizable that it helps a lot in my daily development. Also quite new at blogging and being a poser who thinks that I know something that someone else does not, so please do criticize but with love if possible :)
 

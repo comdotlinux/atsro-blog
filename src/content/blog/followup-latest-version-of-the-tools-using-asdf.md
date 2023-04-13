@@ -58,7 +58,10 @@ mac) : [update-asdf.sh](https://gist.github.com/comdotlinux/17cb87a055f0e2873448
 <script src="https://gist.github.com/comdotlinux/17cb87a055f0e2873448a04397416c30.js"></script>
 
 Let's see it in action shall we?
-https://youtu.be/BvPV7wIVcL8
+
+<div style="display: flex; align-content: center; flex-wrap: wrap; justify-content: center">
+<iframe style="width: 80%; height: 35vh;" src="https://www.youtube-nocookie.com/embed/BvPV7wIVcL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 This is what I use, and I know it's a little rough around the edges but get's the job done. What does it do?
 
