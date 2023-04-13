@@ -15,7 +15,7 @@ ogImage: ""
 description: "Tools"
 ---
 
-[![A Comic By by Monkey User about a Final patch in production](../assets/20221010/104-final-patch.png "Final-Patch")](https://www.monkeyuser.com/about/index.html)
+[![A Comic By by Monkey User about a Final patch in production](../assets/20221010/104-final-patch.png)](https://www.monkeyuser.com/about/index.html)
 
 ## Table of contents
 
