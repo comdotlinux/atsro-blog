@@ -136,7 +136,7 @@ const options: SatoriOptions = {
 };
 
 const generateOgImage = async (mytext = SITE.title) => {
-  const imageName = `${mytext.replace(/[/\\?%*:|"<>]/g, "-")}.png`;
+  const imageName = `${mytext.replace(/[/\\?%*:|"<> ]/g, "-")}.png`;
   const svg = await satori(ogImage(mytext), options);
 
   // render png in production mode
