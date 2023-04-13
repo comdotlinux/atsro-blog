@@ -2,7 +2,7 @@
 title: On the topic of tools, their versions & automated installations
 author: comdotlinux
 pubDatetime: 2022-10-08T16:55:12.000+00:00
-postSlug: on-the-topic-of-tools-their-versions-automated-installations
+postSlug: on-the-topic-of-tools-their-versions-and-automated-installations
 featured: false
 draft: false
 tags:
