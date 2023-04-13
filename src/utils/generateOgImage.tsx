@@ -143,14 +143,14 @@ const generateOgImage = async (mytext = SITE.title) => {
   const svg = await satori(ogImage(sanitizedText), options);
 
   // render png in production mode
+  const resvg = new Resvg(svg);
+  const pngData = resvg.render();
+  const pngBuffer = pngData.asPng();
+
+  console.info("Output PNG Image  :", `${imageName}`);
+
+  await writeFile(`./dist/${imageName}`, pngBuffer);
   if (import.meta.env.MODE === "production") {
-    const resvg = new Resvg(svg);
-    const pngData = resvg.render();
-    const pngBuffer = pngData.asPng();
-
-    console.info("Output PNG Image  :", `${imageName}`);
-
-    await writeFile(`./dist/${imageName}`, pngBuffer);
   }
 
   return svg;

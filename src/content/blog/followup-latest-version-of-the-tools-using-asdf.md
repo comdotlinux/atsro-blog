@@ -17,6 +17,8 @@ description: "Tools"
 
 [![A Comic By by Monkey User about a Final patch in production](../assets/20221010/104-final-patch.png "Final-Patch")](https://www.monkeyuser.com/about/index.html)
 
+## Table of contents
+
 Disclaimer!: This post only talks about `asdf` .  
 afx is also quite new to me too and I don't have enough experience to help you out, maybe you can let me know or point
 me in the correct direction if you find something and I will update it here.
@@ -42,7 +44,7 @@ at `asdf` [documentation](https://asdf-vm.com/manage/versions.html#install-lates
 
 asdf install <name> latest
 
-# Install latest stable version that begins with a given string.
+## Install latest stable version that begins with a given string.
 
 asdf install <name> latest:<version>
 
@@ -70,6 +72,8 @@ This is what I use, and I know it's a little rough around the edges but get's th
 7. Also a consolidated `sed` to update all tools at once
 8. there is a `update-asdf.sh -n` flag that runs in non-interactively by saying yes but does not actually update any
    versions.
+
+## alternative option
 
 There's also an interesting use of
 the [excellent `fzf` to update `asdf` tool versions](https://github.com/junegunn/fzf/wiki/examples#asdf)
@@ -99,6 +103,7 @@ vmi() {
 In action
 
 <div style="display: flex; align-content: center; flex-wrap: wrap; justify-content: center">
+
    <iframe style="width: 80%; height: 35vh;" src="https://www.youtube.com/embed/5tFqGgLL6C4" title="Using fzf to install asdf tool versions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
@@ -106,6 +111,8 @@ This too does not update the versions in the `.tool-versions` file, but probably
 exercise is left for the reader (I've always wanted to say that)
 
 ![A monkeyuser comic on backlogs](../assets/20221010/236-buglog.png "buglog")
+
+## Extro
 
 Pick one from above, maybe modify it to update the tool to the latest and then run `asdf install` schedule the run of
 the chosen method non-interactively and that should take you further until something breaks because of an update.
