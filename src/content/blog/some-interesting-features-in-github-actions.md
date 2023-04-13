@@ -17,12 +17,16 @@ description: "Github Actions"
 
 [![Github Actions](https://avatars.githubusercontent.com/u/44036562?s=200&v=4)](https://docs.github.com/en/actions)
 
+## Intro
+
 [GitHub Actions](https://docs.github.com/en/actions), in my opinion changed the landscape of Continuous Integration by not only having a CI close to the code (for ones using GitHub) but also allowed very close interactions with the [Git Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) and [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) which also allow uploading assets that might be related to the release. Also it really helped that they allow free usage of actions for public repositories that help automate many many tasks that free up the really important time of the contributors who already are doing this in addition to their day job.  
 This coupled with some core actions that take care of basic needs proliferated the usage and creation of multitude of actions that allow doing all kinds of things that you need and almost any new service also keeps the Use Case in mind.
 
 So it's not like all development there is done and there's nothing new coming in to GitHub Actions anymore, on the contrary it seems there are features that solve many problems elegantly are being added all the time! This post is about a few such features that I wanted and now do have included in Github Actions.
 
 Also, I have to clarify that (and search on why that is so) the actions are really actions that are performed as a step in a Job and One or more Jobs make a workflow. So You use actions (either created by yourself or others) in steps and write jobs that run (in parallel, sequentially or using different architectures) that are run as part of workflow that is triggered by events.
+
+## Table Of Contents
 
 ## 1. Select Box and Boolean Inputs For [Workflow Dispatch](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch) (Github Actions Speak for Manual Trigger)
 
@@ -75,17 +79,13 @@ i. The `environment` is one of 'production', 'staging' and 'development' as per 
 
 When we use [environments for deployments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment) (it is not really deploying anything without us writing those steps, just creating an additional scope) we can not only use it as a target as seen above but also, have some waits / cool down before the job is run, separate secrets with the same name, so depending upon the environment selected different values are "injected / used" in the workflow and of course combined with [protected branches](https://docs.github.com/en/github/administering-a-repository/about-protected-branches) you can also have forced approvals not only before merging to the main branch but also before running a workflow e.g. to production.
 
-[Reviewing Deployments](https://docs.github.com/en/actions/managing-workflow-runs/reviewing-deployments) Looks like this:
-
-![Review Deployments](../../assets/20221227/actions-review-deployments.png)
-
-![Approve Deployment](../../assets/20221227/actions-approve-deployments.png)
+Check [Reviewing Deployments](https://docs.github.com/en/actions/managing-workflow-runs/reviewing-deployments) for more information.
 
 ## 3. Writing Your Own Actions
 
 For Some time now there was a [way](https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action) to write your own action and have anyone (if public) to use it and even have it listed and searchable on the [Actions Marketplace](https://github.com/marketplace?type=actions) and a [Dockerfile](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action) action and they are great when one wants to do that but are quite involved (at least the JavaScript ones are for me) but what does one do when there are things that one might (or might not) want to publish and might (or might not) want to keep in the same repository using the action. Which is usually the case when working with a company and probably a private repo? That was a long question but has a not quite long answer, [composite actions](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action).
 
-![](../../assets/20221227/GithubCompositeAction.png)
+![Github Composite Action](../../assets/20221227/GithubCompositeAction.png)
 
 The full code is here in this repository : [composite-actions-example](https://github.com/comdotlinux/composite-actions-example)
 
@@ -139,7 +139,7 @@ jobs:
 
 The Output should be something like below
 
-![](../../assets/20221227/CompositeInputOutputTest.png)
+![Composite Input Output Test](../../assets/20221227/CompositeInputOutputTest.png)
 
 There are limitations to Composite Actions, like not being able to have access to secrets that limit the usability in some cases, as any passed in variable is not masked and not subjected to the same strict secret guidelines.
 
@@ -147,9 +147,9 @@ There are limitations to Composite Actions, like not being able to have access t
 
 As they say (though this is not a movie) show don't tell.
 
-https://youtu.be/HiYfwN\_AkPE
-
-Logs And Masks
+<div style="display: flex; align-content: center; flex-wrap: wrap; justify-content: center">
+   <iframe style="width: 80%; height: 35vh;" src="https://www.youtube-nocookie.com/embed/HiYfwN_AkPE" title="Logs And Masks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 The code can be found [here](https://github.com/comdotlinux/composite-actions-example/blob/main/.github/workflows/logs-and-masks.yaml). There are [other workflow commands](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions) as they are called that might also be of interest :)
 
@@ -182,9 +182,11 @@ The Basics are
 2. Create one small workflow for each project that triggers on respective project changes and just calls the reusable workflow.  
    Let's See It In Action Shall we? Again the [source code is in the same repository](https://github.com/comdotlinux/composite-actions-example)
 
-https://youtu.be/nnbadJz1YcA
+<div style="display: flex; align-content: center; flex-wrap: wrap; justify-content: center">
+   <iframe style="width: 80%; height: 35vh;" src="https://www.youtube-nocookie.com/embed/nnbadJz1YcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
-workflow_call example
+## Extro
 
 That's it for now there are tons of features but these are the lesser known ones or at least ones not easily found.
 
